@@ -11,23 +11,7 @@ Instead of storing long-term AWS Access Keys and secrets inside Jenkins, Vault d
 
 # Architecture
 
-                +----------------------+
-                |     Jenkins EC2      |
-                |  IAM Role Attached   |
-                +----------+-----------+
-                           |
-                           | IAM Authentication
-                           v
-                +----------------------+
-                |   HashiCorp Vault    |
-                | AWS Auth Enabled     |
-                +----------+-----------+
-                           |
-                           | Generate Dynamic Credentials
-                           v
-                +----------------------+
-                |     AWS IAM / STS    |
-                +----------------------+
+&emsp;&emsp;&emsp;&emsp;![image](<img width="1536" height="1024" alt="Vault Architecture" src="https://github.com/user-attachments/assets/400cc824-9359-4eb7-b287-de05868c1b32" />)
 
 
 
