@@ -1,12 +1,11 @@
 # Overview
 
 This project demonstrates how to integrate HashiCorp Vault with Jenkins for secure secret management in CI/CD pipelines using: <br/>
-
-	• AWS IAM Authentication Method <br/>
-  	• AWS Secrets Engine <br/>
-  	• Jenkins running on AWS EC2 <br/>
- 	• Terraform for infrastructure provisioning <br/>
- 	• Dynamic AWS credential generation <br/> 
+&emsp;&emsp;• AWS IAM Authentication Method <br/>
+&emsp;&emsp;• AWS Secrets Engine <br/>
+&emsp;&emsp;• Jenkins running on AWS EC2 <br/>
+&emsp;&emsp;• Terraform for infrastructure provisioning <br/>
+&emsp;&emsp;• Dynamic AWS credential generation <br/> 
 
 Instead of storing long-term AWS Access Keys inside Jenkins, Vault dynamically generates temporary AWS credentials and securely injects them into Jenkins pipelines.
 
