@@ -1,6 +1,6 @@
 # Overview
 
-This project demonstrates how to integrate HashiCorp Vault with Jenkins for secure secret management in CI/CD pipelines using: <br/><br/>
+This guide demonstrates how to integrate HashiCorp Vault with Jenkins for secure secret management in CI/CD pipelines using: <br/><br/>
 &emsp;&emsp;• AWS IAM Authentication Method <br/>
 &emsp;&emsp;• AWS Secrets Engine <br/>
 &emsp;&emsp;• Jenkins running on AWS EC2 <br/>
