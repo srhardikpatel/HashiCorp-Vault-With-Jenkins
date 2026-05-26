@@ -7,7 +7,27 @@ This guide demonstrates how to integrate HashiCorp Vault with Jenkins for secure
 &emsp;&emsp;• Terraform for infrastructure provisioning <br/>
 &emsp;&emsp;• Dynamic AWS credential generation <br/> 
 
-Instead of storing long-term AWS Access Keys inside Jenkins, Vault dynamically generates temporary AWS credentials and securely injects them into Jenkins pipelines.
+Instead of storing long-term AWS Access Keys and secrets inside Jenkins, Vault dynamically generates temporary AWS credentials and securely injects them into Jenkins pipelines.
+
+# Architecture
+
+                +----------------------+
+                |     Jenkins EC2      |
+                |  IAM Role Attached   |
+                +----------+-----------+
+                           |
+                           | IAM Authentication
+                           v
+                +----------------------+
+                |   HashiCorp Vault    |
+                | AWS Auth Enabled     |
+                +----------+-----------+
+                           |
+                           | Generate Dynamic Credentials
+                           v
+                +----------------------+
+                |     AWS IAM / STS    |
+                +----------------------+
 
 
 
