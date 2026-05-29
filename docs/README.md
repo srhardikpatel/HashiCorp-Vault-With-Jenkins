@@ -131,7 +131,7 @@ jenkins-ec2-role
 
 # Step 4 - Create Access key for the USER created in Step 3.
 
-&emsp;&emsp;&emsp;&emsp;![image](https://github.com/srhardikpatel/HashiCorp-Vault-With-Jenkins/blob/main/docs/assets/images/accesskey.png)
+&emsp;&emsp;&emsp;&emsp;![image](https://github.com/srhardikpatel/HashiCorp-Vault-With-Jenkins/blob/main/docs/assets/images/2.JPEG)
 
 # Step 5 - Start the Vault dev server
 
