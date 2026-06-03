@@ -182,7 +182,9 @@ This command starts a HashiCorp Vault server in development mode with specific c
 
 `vault server` - This is the base command telling the Vault CLI to start a Vault server process.
 
-`-dev` - Switches Vault into Development Mode. **What it does**: It runs entirely in-memory (all data is lost when the server stops), automatically unseals the vault, and pre-configures a root token.
+`-dev` - Switches Vault into Development Mode. 
+
+**What it does**: It runs entirely in-memory (all data is lost when the server stops), automatically unseals the vault, and pre-configures a root token.
 
 ⚠️ Warning: Never use this flag in a production environment. It bypasses crucial production security practices for the sake of local testing speed.
 
@@ -223,7 +225,7 @@ vault write aws/config/root \
     secret_key=<secret-key> \
     region=<region>
 ```
-> Replace `access-key` and `secret-key` with the `access-key` and `secret-key` from step-6. </br>
+> Replace `access-key` and `secret-key` with the `access-key` and `secret-key` from step-6.
   Use `region` of your choice.
 
 # Step 11 - Create Dynamic AWS Role
@@ -276,8 +278,8 @@ vault write auth/aws/config/client \
     secret_key=<secret-key> \
     region=<region>
 ```
-> Replace `access-key` and `secret-key` with the `access-key` and `secret-key` from step-6. </br>
-  Use the same 'region' selected in step 10.
+> Replace `access-key` and `secret-key` with the `access-key` and `secret-key` from step-6.
+  Use the same `region` selected in step 10.
 
 # Step 14 - Create Vault Policy for Jenkins
 
@@ -358,6 +360,8 @@ Manage Jenkins → Plugins
 Install:
 
 &emsp;&emsp;• HashiCorp Vault <br/>
+
+&emsp;&emsp;&emsp;&emsp;![Alt text]({{"/assets/images/plugin.png" | relative_url}})
 
 # Step 18 - Configure Vault Token in Jenkins
 
